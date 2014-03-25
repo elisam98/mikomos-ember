@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		{{#link-to 'index' classNames="navbar-brand"}}Mikomos Dating{{/link-to}}
+	</div>
+	<div class="navbar-collapse collapse" id="mainCollapse">
+		<ul class="nav navbar-nav">
+			{{#link-to 'index' tagName="li"}}<a href="#">Home</a>{{/link-to}}
+			{{#link-to 'browse' tagName="li"}}<a href="#">Browse</a>{{/link-to}}
+			{{#link-to 'search' tagName="li"}}<a href="#">Search</a>{{/link-to}}
+		</ul>
+		<form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+				{{input type="text" classNames="form-control" placeholder="Search Mikomos" value=search action="query"}}
+			</div>
+			<button {{action "query"}} type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+		</form>
+	</div>
+</nav>
+<div class="container">
+	{{outlet}}
+</div>
