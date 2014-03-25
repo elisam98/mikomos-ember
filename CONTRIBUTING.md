@@ -1,6 +1,6 @@
 # Questions
 
-This is the issue tracker for Ember App Kit.
+This is the issue tracker for Mikomos Ember Site.
 The Ember App Kit community uses this site
 to collect and track bugs and discussions of new features.
 If you are having difficulties or have a question about usage please ask a
